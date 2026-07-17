@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ne">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kyang Health Post | क्यांग स्वास्थ्य चौकी</title>
+<title>
+क्यांग स्वास्थ्य चौकी | Kyang Health Post
+</title>
 
 <meta name="description" content="Official Website of Kyang Health Post, Modi Rural Municipality, Parbat, Gandaki Province, Nepal">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -17,165 +19,248 @@
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
+
 
 body{
-    font-family:'Poppins','Noto Sans Devanagari',sans-serif;
-    line-height:1.6;
-    color:#333;
-    background:#f7f9fc;
+
+font-family:
+"Poppins",
+"Noto Sans Devanagari",
+sans-serif;
+
+background:#f5f8fb;
+color:#333;
+
 }
+
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
+
 
 .container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
 }
 
 
-/* Top Bar */
+/* TOP BAR */
 
 .topbar{
-    background:#075985;
-    color:white;
-    padding:10px 0;
-    font-size:14px;
+
+background:#005b96;
+color:white;
+padding:10px 0;
+font-size:14px;
+
 }
+
 
 .topbar .container{
-    display:flex;
-    justify-content:space-between;
+
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+
 }
 
 
-/* Header */
+
+/* HEADER */
+
 
 header{
-    background:white;
-    box-shadow:0 3px 10px rgba(0,0,0,.1);
-    position:sticky;
-    top:0;
-    z-index:1000;
+
+background:white;
+box-shadow:0 3px 12px rgba(0,0,0,.12);
+
 }
 
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 0;
+
+.header-main{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 0;
+
+}
+
+
+
+.brand{
+
+display:flex;
+align-items:center;
+gap:15px;
+
 }
 
 
 .logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
+
+width:75px;
+height:75px;
+border-radius:50%;
+background:#eee;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:35px;
+
 }
 
 
-.logo img{
-    width:65px;
+
+.brand h1{
+
+font-size:24px;
+color:#005b96;
+
 }
 
 
-.logo h1{
-    font-size:22px;
-    color:#075985;
+.brand p{
+
+color:#198754;
+font-size:16px;
+
 }
 
-.logo span{
-    color:#15803d;
-    font-size:16px;
-}
 
+
+/* NAVIGATION */
+
+
+nav{
+
+background:#198754;
+
+}
 
 
 nav ul{
-    display:flex;
-    list-style:none;
-    gap:20px;
+
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+list-style:none;
+
 }
 
 
-nav a{
-    text-decoration:none;
-    color:#333;
-    font-weight:500;
+nav ul li a{
+
+display:block;
+padding:14px 18px;
+color:white;
+text-decoration:none;
+font-weight:500;
+
 }
 
 
-nav a:hover{
-    color:#15803d;
+nav ul li a:hover{
+
+background:#146c43;
+
 }
 
 
 
-/* Hero */
+/* HERO */
+
 
 .hero{
 
-height:500px;
+height:480px;
 
 background:
+
 linear-gradient(
-rgba(0,80,120,.75),
-rgba(20,120,60,.75)
+rgba(0,91,150,.75),
+rgba(25,135,84,.75)
 ),
-url("https://images.unsplash.com/photo-1584982751601-97dcc096659c")
+
+url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3")
+
 center/cover;
+
 
 display:flex;
 align-items:center;
+
 color:white;
 
 }
 
 
+
 .hero-content{
-    width:60%;
+
+max-width:700px;
+
 }
+
 
 
 .hero h2{
-    font-size:45px;
-    margin-bottom:15px;
+
+font-size:45px;
+margin-bottom:15px;
+
 }
+
 
 
 .hero p{
-    font-size:20px;
+
+font-size:20px;
+margin-bottom:25px;
+
 }
+
 
 
 .btn{
 
-display:inline-block;
-background:#15803d;
+background:#198754;
 color:white;
-padding:12px 25px;
+padding:13px 28px;
 border-radius:30px;
 text-decoration:none;
-margin-top:25px;
+display:inline-block;
+
+}
+
+
+.btn:hover{
+
+background:#146c43;
 
 }
 
 
 
-/* Sections */
+/* SECTION */
+
 
 section{
-    padding:70px 0;
+
+padding:60px 0;
+
 }
 
 
-.section-title{
+.title{
 
 text-align:center;
 margin-bottom:40px;
@@ -183,207 +268,109 @@ margin-bottom:40px;
 }
 
 
-.section-title h2{
+.title h2{
 
-color:#075985;
+color:#005b96;
 font-size:32px;
 
 }
 
 
-.section-title p{
+.title p{
 
 color:#666;
 
 }
 
 
-/* Cards */
+
+/* QUICK SERVICES */
 
 
-.cards{
+.quick{
 
 display:grid;
+
 grid-template-columns:
-repeat(auto-fit,minmax(250px,1fr));
+repeat(auto-fit,minmax(220px,1fr));
+
 gap:25px;
 
 }
 
 
-.card{
+.box{
 
 background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+padding:25px;
+border-radius:12px;
+
+box-shadow:
+0 5px 15px rgba(0,0,0,.08);
+
 text-align:center;
 
 }
 
 
-.card h3{
 
-color:#075985;
+.box span{
+
+font-size:40px;
+
+}
+
+
+.box h3{
+
+color:#005b96;
 margin:15px 0;
 
 }
 
 
-.icon{
 
-font-size:45px;
+/* NOTICE */
 
-}
-
-
-
-/* About */
-
-.about{
+.notice-area{
 
 background:white;
 
 }
 
 
-.about-content{
+.notice{
 
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
+border-left:5px solid #198754;
 
-}
+background:#f8fff9;
 
+padding:20px;
 
-/* Notice */
-
-
-.notice-box{
-
-background:white;
-padding:25px;
-border-left:5px solid #15803d;
-box-shadow:0 5px 15px #ddd;
-
-}
-
-
-.notice-box li{
-
-margin:10px;
-
-}
-
-
-/* Staff */
-
-.staff img{
-
-width:120px;
-height:120px;
-border-radius:50%;
-object-fit:cover;
-
-}
-
-
-/* Gallery */
-
-
-.gallery{
-
-display:grid;
-grid-template-columns:
-repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-
-}
-
-
-.gallery img{
-
-width:100%;
-height:200px;
-object-fit:cover;
-border-radius:10px;
-
-}
-
-
-/* Contact */
-
-
-.contact{
-
-background:#075985;
-color:white;
-
-}
-
-
-.contact h2{
-
-color:white;
-
-}
-
-
-/* Footer */
-
-
-footer{
-
-background:#052c3f;
-color:white;
-padding:40px 0;
-
-}
-
-
-.footer-grid{
-
-display:grid;
-grid-template-columns:
-repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-
-}
-
-
-.copyright{
-
-text-align:center;
-margin-top:30px;
-border-top:1px solid #555;
-padding-top:20px;
+margin-bottom:15px;
 
 }
 
 
 
-/* Mobile */
+.notice h3{
+
+color:#005b96;
+
+}
+
+
+
+/* MOBILE */
 
 @media(max-width:768px){
 
-.navbar{
+.header-main{
 
 flex-direction:column;
 
 }
 
-nav ul{
-
-flex-wrap:wrap;
-justify-content:center;
-
-}
-
-.hero-content{
-
-width:100%;
-
-}
 
 .hero h2{
 
@@ -391,11 +378,14 @@ font-size:32px;
 
 }
 
-.about-content{
 
-grid-template-columns:1fr;
+nav ul{
+
+flex-direction:column;
+text-align:center;
 
 }
+
 
 }
 
@@ -406,3 +396,121 @@ grid-template-columns:1fr;
 
 
 <body>
+
+
+<!-- TOP INFORMATION BAR -->
+
+<div class="topbar">
+
+<div class="container">
+
+<div>
+🏥 सरकारी स्वास्थ्य सेवा
+</div>
+
+<div>
+📞 +977-9800000000 | ✉ info@kyanghealthpost.org.np
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container header-main">
+
+
+<div class="brand">
+
+<div class="logo">
+🇳🇵
+</div>
+
+
+<div>
+
+<h1>
+Kyang Health Post
+</h1>
+
+<p>
+क्यांग स्वास्थ्य चौकी
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<nav>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#programs">Programs</a></li>
+
+<li><a href="#staff">Staff</a></li>
+
+<li><a href="#notice">Notice</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+
+</ul>
+
+</nav>
+
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+
+<div class="container">
+
+<div class="hero-content">
+
+
+<h2>
+स्वस्थ समुदायको लागि गुणस्तरीय स्वास्थ्य सेवा
+</h2>
+
+
+<p>
+Welcome to Kyang Health Post, 
+Modi Rural Municipality, Parbat,
+Gandaki Province, Nepal.
+</p>
+
+
+<a class="btn" href="#services">
+हाम्रा सेवाहरू हेर्नुहोस्
+</a>
+
+
+</div>
+
+</div>
+
+
+</section>
