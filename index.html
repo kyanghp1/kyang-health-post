@@ -1,1181 +1,611 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ne">
+
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kyang Health Post | क्यांग स्वास्थ्य चौकी</title>
+<meta name="viewport" 
+content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Official Website of Kyang Health Post, Modi Rural Municipality, Parbat, Gandaki Province, Nepal">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+<title>
+Kyang Health Post | क्यांग स्वास्थ्य चौकी
+</title>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 <style>
+.call-button{
 
+position:fixed;
+bottom:20px;
+right:20px;
+
+background:#d32f2f;
+color:white;
+
+padding:15px 25px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+box-shadow:0 5px 15px #999;
+
+}
+
+
+.call-button:hover{
+
+background:#b71c1c;
+
+}
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:"Noto Sans Devanagari",Arial,sans-serif;
 }
 
-html{
-scroll-behavior:smooth;
-}
 
 body{
-
-font-family:
-'Poppins',
-'Noto Sans Devanagari',
-sans-serif;
-
-background:#f4f8fb;
+background:#f4f9f9;
 color:#333;
-
+line-height:1.6;
 }
 
-.container{
-
-width:90%;
-max-width:1200px;
-margin:auto;
-
-}
-
-/* TOP BAR */
-
-.topbar{
-
-background:#005b96;
-color:#fff;
-padding:8px 0;
-font-size:14px;
-
-}
-
-.topbar .container{
-
-display:flex;
-justify-content:space-between;
-flex-wrap:wrap;
-
-}
 
 /* HEADER */
 
 header{
-
-background:#fff;
-position:sticky;
-top:0;
-z-index:999;
-box-shadow:0 2px 15px rgba(0,0,0,.08);
-
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
 }
 
-.header-main{
+
+.topbar{
 
 display:flex;
-justify-content:space-between;
+justify-content:center;
 align-items:center;
-padding:15px 0;
+gap:25px;
+padding:20px;
+background:#e8f5f5;
 
 }
+
 
 .logo{
 
+width:90px;
+height:90px;
+
+}
+
+
+.title{
+
+text-align:center;
+
+}
+
+
+.title h1{
+
+color:#00695c;
+font-size:32px;
+
+}
+
+
+.title h2{
+
+color:#1976d2;
+
+}
+
+
+/* MENU */
+
+
+nav{
+
+background:#00695c;
 display:flex;
-align-items:center;
-gap:15px;
+justify-content:center;
+flex-wrap:wrap;
 
 }
 
-.logo img{
 
-width:70px;
-height:70px;
-border-radius:50%;
-object-fit:cover;
+nav a{
 
-}
-
-.logo-text h1{
-
-font-size:26px;
-color:#005b96;
-
-}
-
-.logo-text p{
-
-color:#198754;
-font-size:16px;
-
-}
-
-/* NAVIGATION */
-
-nav ul{
-
-display:flex;
-list-style:none;
-
-}
-
-nav ul li{
-
-margin-left:18px;
-
-}
-
-nav ul li a{
-
+color:white;
 text-decoration:none;
-color:#333;
-font-weight:600;
-transition:.3s;
+padding:14px 18px;
 
 }
 
-nav ul li a:hover{
 
-color:#198754;
+nav a:hover{
+
+background:#004d40;
 
 }
+
+
 
 /* HERO */
 
-.hero{
 
-height:85vh;
+.hero{
 
 background:
-
 linear-gradient(
-
-rgba(0,91,150,.70),
-
-rgba(25,135,84,.60)
-
-),
-
-url("images/kyang-building.jpg");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-align-items:center;
+rgba(0,105,92,.85),
+rgba(25,118,210,.85)
+);
 
 color:white;
-
-}
-
-.hero-content{
-
-max-width:700px;
-
-}
-
-.hero-content h4{
-
-font-size:22px;
-margin-bottom:10px;
-
-}
-
-.hero-content h1{
-
-font-size:56px;
-margin-bottom:15px;
-line-height:1.2;
-
-}
-
-.hero-content p{
-
-font-size:20px;
-margin-bottom:30px;
-
-}
-
-.btn{
-
-display:inline-block;
-padding:14px 30px;
-border-radius:50px;
-text-decoration:none;
-font-weight:600;
-transition:.3s;
-
-}
-
-.btn-primary{
-
-background:#198754;
-color:white;
-
-}
-
-.btn-primary:hover{
-
-background:#146c43;
-
-}
-
-.btn-outline{
-
-border:2px solid white;
-color:white;
-margin-left:15px;
-
-}
-
-.btn-outline:hover{
-
-background:white;
-color:#005b96;
-
-}
-
-/* STATS */
-
-.stats{
-
-margin-top:-70px;
-position:relative;
-z-index:10;
-
-}
-
-.stats-grid{
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(220px,1fr));
-
-gap:20px;
-
-}
-
-.stat{
-
-background:white;
-padding:35px;
 text-align:center;
-
-border-radius:12px;
-
-box-shadow:0 10px 25px rgba(0,0,0,.08);
+padding:80px 20px;
 
 }
 
-.stat i{
 
-font-size:42px;
-color:#198754;
-margin-bottom:15px;
-
-}
-
-.stat h2{
-
-font-size:34px;
-color:#005b96;
-
-}
-
-.stat p{
-
-color:#666;
-
-}
-
-/* SECTION */
-
-section{
-
-padding:80px 0;
-
-}
-
-.section-title{
-
-text-align:center;
-margin-bottom:50px;
-
-}
-
-.section-title h2{
-
-font-size:38px;
-color:#005b96;
-
-}
-
-.section-title p{
-
-color:#666;
-
-}
-
-/* RESPONSIVE */
-
-@media(max-width:900px){
-
-.header-main{
-
-flex-direction:column;
-
-}
-
-nav ul{
-
-flex-wrap:wrap;
-justify-content:center;
-margin-top:20px;
-
-}
-
-.hero{
-
-text-align:center;
-height:75vh;
-
-}
-
-.hero-content h1{
+.hero h1{
 
 font-size:40px;
 
 }
 
-.hero-content p{
 
+.hero button{
+
+margin-top:25px;
+padding:12px 30px;
+border:none;
+border-radius:25px;
 font-size:18px;
+cursor:pointer;
 
 }
 
-.btn{
 
-display:block;
-margin:15px auto;
+
+/* SECTION */
+
+
+section{
+
+padding:50px 10%;
+
+}
+
+
+section h2{
+
+text-align:center;
+color:#00695c;
+margin-bottom:30px;
 
 }
 
-.btn-outline{
 
-margin-left:0;
+
+/* CARDS */
+
+
+.cards{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
 
 }
+
+
+.card{
+
+background:white;
+width:260px;
+padding:25px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,.1);
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+/* NOTICE */
+
+
+.notice{
+
+background:white;
+padding:25px;
+border-left:6px solid #1976d2;
+
+}
+
+
+
+/* GALLERY */
+
+
+.gallery{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+
+}
+
+
+.gallery img{
+
+width:300px;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+
+}
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#004d40;
+color:white;
+text-align:center;
+padding:25px;
+
+}
+
+
+
+/* MOBILE */
+
+
+@media(max-width:768px){
+
+
+.topbar{
+
+flex-direction:column;
+
+}
+
+
+nav a{
+
+width:100%;
+text-align:center;
+
+}
+
+
+.card{
+
+width:90%;
+
+}
+
+
+.gallery img{
+
+width:90%;
+
+}
+
 
 }
 
 </style>
 
+
 </head>
 
+<a href="tel:98XXXXXXXX" class="call-button">
+
+☎️ Emergency Call
+
+</a>
 <body>
 
-<!-- TOP BAR -->
 
-<div class="topbar">
-
-<div class="container">
-
-<div>
-
-🇳🇵 नेपाल सरकार | स्वास्थ्य तथा जनसंख्या मन्त्रालय
-
-</div>
-
-<div>
-
-📞 +977-9800000000 |
-✉ info@kyanghealthpost.org.np
-
-</div>
-
-</div>
-
-</div>
-
-<!-- HEADER -->
 
 <header>
 
-<div class="container header-main">
 
-<div class="logo">
+<div class="topbar">
 
-<img src="images/logo.png" alt="Logo">
 
-<div class="logo-text">
-
-<h1>Kyang Health Post</h1>
-
-<p>क्यांग स्वास्थ्य चौकी</p>
-
-</div>
-
-</div>
-
-<nav>
-
-<ul>
-
-<li><a href="#">Home</a></li>
-
-<li><a href="#">About</a></li>
-
-<li><a href="#">Services</a></li>
-
-<li><a href="#">Programs</a></li>
-
-<li><a href="#">Notice</a></li>
-
-<li><a href="#">Gallery</a></li>
-
-<li><a href="#">Contact</a></li>
-
-</ul>
-
-</nav>
-
-</div>
-
-</header>
-
-<!-- HERO -->
-
-<section class="hero">
-
-<div class="container">
-
-<div class="hero-content">
-
-<h4>Welcome to</h4>
+<img class="logo"
+src="images/logo.png"
+alt="Kyang Health Post Logo">
+<div class="title">
 
 <h1>
-
-Kyang Health Post
-
-</h1>
-
-<p>
-
-Providing Quality Primary Healthcare Services
-for the people of Modi Rural Municipality,
-Parbat, Gandaki Province.
-
-</p>
-
-<a href="#" class="btn btn-primary">
-
-Our Services
-
-</a>
-
-<a href="#" class="btn btn-outline">
-
-Emergency Contact
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- STATISTICS -->
-
-<section class="stats">
-
-<div class="container">
-
-<div class="stats-grid">
-
-<div class="stat">
-
-<i class="fas fa-user-md"></i>
-
-<h2>10+</h2>
-
-<p>Health Staff</p>
-
-</div>
-
-<div class="stat">
-
-<i class="fas fa-heartbeat"></i>
-
-<h2>20+</h2>
-
-<p>Healthcare Services</p>
-
-</div>
-
-<div class="stat">
-
-<i class="fas fa-users"></i>
-
-<h2>5000+</h2>
-
-<p>Population Served</p>
-
-</div>
-
-<div class="stat">
-
-<i class="fas fa-ambulance"></i>
-
-<h2>24/7</h2>
-
-<p>Emergency Support</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<!-- ABOUT SECTION -->
-
-<section id="about">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>About Kyang Health Post</h2>
-
-<p>
-Serving the community with quality primary healthcare services.
-</p>
-
-</div>
-
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:40px;align-items:center;">
-
-<div>
-
-<img src="images/kyang-building.jpg"
-style="width:100%;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.15);">
-
-</div>
-
-<div>
-
-<h3 style="color:#005b96;margin-bottom:20px;">
 क्यांग स्वास्थ्य चौकी
-</h3>
-
-<p style="margin-bottom:15px;line-height:1.8;">
-Kyang Health Post is committed to providing accessible,
-affordable and quality healthcare services to the residents
-of Modi Rural Municipality, Parbat District.
-</p>
-
-<p style="margin-bottom:15px;line-height:1.8;">
-The Health Post delivers preventive, promotive,
-curative and rehabilitative health services while
-supporting national health programs.
-</p>
-
-<a href="#" class="btn btn-primary">
-Learn More
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- MISSION VISION -->
-
-<section style="background:#eef7ff;">
-
-<div class="container">
-
-<div class="stats-grid">
-
-<div class="stat">
-
-<i class="fas fa-bullseye"></i>
-
-<h2 style="font-size:28px;">
-Mission
-</h2>
-
-<p>
-Deliver quality healthcare services to every citizen.
-</p>
-
-</div>
-
-<div class="stat">
-
-<i class="fas fa-eye"></i>
-
-<h2 style="font-size:28px;">
-Vision
-</h2>
-
-<p>
-Healthy community through accessible healthcare.
-</p>
-
-</div>
-
-<div class="stat">
-
-<i class="fas fa-handshake"></i>
-
-<h2 style="font-size:28px;">
-Values
-</h2>
-
-<p>
-Integrity, Quality, Compassion and Accountability.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- SERVICES -->
-
-<section id="services">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Our Healthcare Services</h2>
-
-<p>Quality Primary Healthcare Services</p>
-
-</div>
-
-<div class="stats-grid">
-
-<div class="stat">
-
-<i class="fas fa-stethoscope"></i>
-
-<h3>General OPD</h3>
-
-<p>
-Daily outpatient consultation and treatment.
-</p>
-
-</div>
-
-<div class="stat">
-
-<i class="fas fa-syringe"></i>
-
-<h3>Immunization</h3>
-
-<p>
-Routine vaccination services for children.
-</p>
-
-</div>
-
-<div class="stat">
-
-<i class="fas fa-female"></i>
-
-<h3>Maternal Care</h3>
-
-<p>
-ANC, PNC and Safe Motherhood services.
-</p>
-
-</div>
-
-<div class="stat">
-
-<i class="fas fa-flask"></i>
-
-<h3>Laboratory</h3>
-
-<p>
-Basic laboratory investigation services.
-</p>
-
-</div>
-
-<div class="stat">
-
-<i class="fas fa-pills"></i>
-
-<h3>Pharmacy</h3>
-
-<p>
-Essential medicines available.
-</p>
-
-</div>
-
-<div class="stat">
-
-<i class="fas fa-heart"></i>
-
-<h3>Family Planning</h3>
-
-<p>
-Counselling and reproductive health services.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- HEALTH PROGRAMS -->
-
-<section id="programs" style="background:#eef7ff;">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Health Programs</h2>
-
-<p>Government Health Initiatives</p>
-
-</div>
-
-<div class="stats-grid">
-
-<div class="stat">
-
-<i class="fas fa-baby"></i>
-
-<h3>Child Health</h3>
-
-<p>
-Growth monitoring and child healthcare.
-</p>
-
-</div>
-
-<div class="stat">
-
-<i class="fas fa-apple-alt"></i>
-
-<h3>Nutrition</h3>
-
-<p>
-Nutrition counselling and awareness.
-</p>
-
-</div>
-
-<div class="stat">
-
-<i class="fas fa-lungs"></i>
-
-<h3>TB Program</h3>
-
-<p>
-Tuberculosis diagnosis and treatment support.
-</p>
-
-</div>
-
-<div class="stat">
-
-<i class="fas fa-heartbeat"></i>
-
-<h3>NCD Clinic</h3>
-
-<p>
-Diabetes and hypertension screening.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- MESSAGE -->
-
-<section>
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Message From Health Incharge</h2>
-
-<p>Welcome Message</p>
-
-</div>
-
-<div style="background:white;padding:40px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.08);display:grid;grid-template-columns:220px 1fr;gap:30px;align-items:center;">
-
-<div>
-
-<img src="images/incharge.jpg"
-style="width:100%;border-radius:12px;">
-
-</div>
-
-<div>
-
-<h3 style="color:#005b96;">
-Health Post Incharge
-</h3>
-
-<br>
-
-<p style="line-height:1.9;">
-
-Welcome to the official website of Kyang Health Post.
-
-Our team remains committed to providing quality,
-accessible and people-centered healthcare services.
-
-We thank the community for their continued trust and
-support.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- WHY CHOOSE US -->
-
-<section style="background:#005b96;color:white;">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2 style="color:white;">
-Why Choose Kyang Health Post?
-</h2>
-
-<p style="color:#ddd;">
-Dedicated to Community Health
-</p>
-
-</div>
-
-<div class="stats-grid">
-
-<div class="stat">
-
-<i class="fas fa-user-nurse"></i>
-
-<h3>Qualified Staff</h3>
-
-<p>
-Experienced healthcare professionals.
-</p>
-
-</div>
-
-<div class="stat">
-
-<i class="fas fa-clock"></i>
-
-<h3>Timely Service</h3>
-
-<p>
-Fast and efficient healthcare delivery.
-</p>
-
-</div>
-
-<div class="stat">
-
-<i class="fas fa-shield-heart"></i>
-
-<h3>Quality Care</h3>
-
-<p>
-Patient-focused treatment and counselling.
-</p>
-
-</div>
-
-<div class="stat">
-
-<i class="fas fa-hand-holding-heart"></i>
-
-<h3>Community First</h3>
-
-<p>
-Serving every citizen with compassion.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- EMERGENCY -->
-
-<section>
-
-<div class="container">
-
-<div style="background:#198754;color:white;padding:35px;border-radius:15px;text-align:center;">
-
-<h2>24 Hour Emergency Contact</h2>
-
-<br>
-
-<h1 style="font-size:48px;">
-📞 +977-9800000000
 </h1>
 
-<br>
+
+<h2>
+Kyang Health Post
+</h2>
+
 
 <p>
-For emergency healthcare services, please contact the Health Post immediately.
+मोदी गाउँपालिका - पर्वत
+<br>
+गण्डकी प्रदेश, नेपाल
 </p>
 
-</div>
 
 </div>
 
-</section>
-<!-- HEADER SECTION -->
-<header>
-<div class="topbar">
-    <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Emblem_of_Nepal.svg" 
-        class="logo">
-    </div>
 
-    <div class="title">
-        <h1>क्यांग स्वास्थ्य चौकी</h1>
-        <h2>Kyang Health Post</h2>
-        <p>मोदी गाउँपालिका - पर्वत, गण्डकी प्रदेश, नेपाल</p>
-    </div>
 </div>
+
 
 
 <nav>
+
 <a href="#home">गृहपृष्ठ</a>
+
 <a href="#about">हाम्रो बारेमा</a>
+
 <a href="#services">सेवाहरू</a>
+
 <a href="#staff">कर्मचारी</a>
+
 <a href="#notice">सूचना</a>
+
 <a href="#contact">सम्पर्क</a>
+
+
 </nav>
+
 
 </header>
 
 
-<!-- HERO SECTION -->
 
-<section id="home" class="hero">
+<section class="hero" id="home">
 
-<h1>स्वास्थ्य सेवा तपाईंको नजिक</h1>
+
+<h1>
+स्वास्थ्य सेवा तपाईंको नजिक
+</h1>
+
 
 <p>
-Kyang Health Post provides quality basic health services 
-for the people of Modi Rural Municipality.
+Quality Primary Health Care Service
 </p>
+
 
 <button>
 स्वास्थ्य सेवा लिनुहोस्
 </button>
 
+
 </section>
-
-
 
 <!-- ABOUT SECTION -->
 
 <section id="about">
 
-<h2>क्यांग स्वास्थ्य चौकीको बारेमा</h2>
+<h2>
+क्यांग स्वास्थ्य चौकीको बारेमा
+</h2>
+
 
 <p>
 क्यांग स्वास्थ्य चौकी मोदी गाउँपालिका, पर्वत जिल्लामा
-अवस्थित स्थानीय स्वास्थ्य संस्था हो।
-यसले समुदायलाई प्राथमिक स्वास्थ्य सेवा,
-मातृ तथा शिशु स्वास्थ्य सेवा,
-खोप सेवा तथा स्वास्थ्य परामर्श प्रदान गर्दछ।
+अवस्थित सरकारी स्वास्थ्य संस्था हो।
+यसले स्थानीय समुदायलाई प्राथमिक स्वास्थ्य सेवा,
+मातृ तथा शिशु स्वास्थ्य सेवा, खोप सेवा,
+परिवार नियोजन तथा स्वास्थ्य परामर्श प्रदान गर्दछ।
 </p>
+
 
 <p>
-Kyang Health Post is a government health facility 
-providing essential healthcare services to local communities.
+Kyang Health Post is a government health facility
+providing essential primary healthcare services
+to the community.
 </p>
 
+
 </section>
+
+
 
 
 
 <!-- SERVICES SECTION -->
 
+
 <section id="services">
 
-<h2>हाम्रा स्वास्थ्य सेवाहरू</h2>
+
+<h2>
+हाम्रा स्वास्थ्य सेवाहरू
+</h2>
+
 
 <div class="cards">
 
 
 <div class="card">
+
 <h3>🩺 सामान्य उपचार</h3>
+
 <p>
-General checkup and basic treatment services.
+General checkup and basic treatment service.
 </p>
+
 </div>
 
 
+
 <div class="card">
+
 <h3>💉 खोप सेवा</h3>
+
 <p>
-Routine immunization and vaccination programs.
+Routine immunization and vaccination.
 </p>
+
 </div>
 
 
+
+
 <div class="card">
+
 <h3>👩‍⚕️ मातृ तथा शिशु स्वास्थ्य</h3>
+
 <p>
-ANC, PNC and child health services.
+ANC, PNC and child healthcare service.
 </p>
+
 </div>
 
 
+
+
 <div class="card">
+
 <h3>🧪 प्रयोगशाला सेवा</h3>
+
 <p>
 Basic laboratory testing facilities.
 </p>
+
 </div>
 
 
 </div>
+
 
 </section>
+
+
+
+
+
 <!-- STAFF SECTION -->
+
 
 <section id="staff">
 
-<h2>हाम्रा कर्मचारीहरू</h2>
+
+<h2>
+हाम्रा कर्मचारीहरू
+</h2>
+
+
 
 <div class="cards">
 
 
 <div class="card">
-<h3>👨‍⚕️ स्वास्थ्य चौकी प्रमुख</h3>
+
+<h3>
+👨‍⚕️ स्वास्थ्य चौकी प्रमुख
+</h3>
+
 <p>
 नाम: ....................<br>
-पद: Health Assistant / Incharge
+पद: Health Assistant
 </p>
+
 </div>
 
 
+
 <div class="card">
-<h3>👩‍⚕️ नर्सिङ कर्मचारी</h3>
+
+<h3>
+👩‍⚕️ नर्सिङ कर्मचारी
+</h3>
+
 <p>
 नाम: ....................<br>
 पद: ANM / Staff Nurse
 </p>
+
 </div>
+
 
 
 <div class="card">
-<h3>💊 स्वास्थ्यकर्मी</h3>
+
+<h3>
+💊 स्वास्थ्यकर्मी
+</h3>
+
 <p>
 नाम: ....................<br>
-पद: AHW / Support Staff
+पद: AHW
 </p>
+
 </div>
 
 
 </div>
+
 
 </section>
+
 
 
 
 
 <!-- NOTICE SECTION -->
 
-<section id="notice">
-
-<h2>सूचना तथा जानकारी</h2>
-
 
 <div class="notice">
 
-<ul>
+<ul id="notice-list">
 
-<li>
-📢 नियमित खोप कार्यक्रम सञ्चालन भइरहेको छ।
-</li>
-
-<li>
-📢 गर्भवती महिलाहरूका लागि ANC सेवा उपलब्ध छ।
-</li>
-
-<li>
-📢 स्वास्थ्य परीक्षणका लागि स्वास्थ्य चौकीमा सम्पर्क गर्नुहोस्।
-</li>
+Loading notice...
 
 </ul>
 
-
 </div>
-
-
-</section>
-
-
-
 
 <!-- GALLERY SECTION -->
 
+
 <section id="gallery">
 
-<h2>फोटो ग्यालरी</h2>
+
+<h2>
+फोटो ग्यालरी
+</h2>
 
 
 <div class="gallery">
 
 
 <img src="https://via.placeholder.com/300x200"
-alt="Health Post Photo">
+alt="Kyang Health Post">
 
 
 <img src="https://via.placeholder.com/300x200"
@@ -1183,7 +613,7 @@ alt="Health Service">
 
 
 <img src="https://via.placeholder.com/300x200"
-alt="Community Health">
+alt="Community Program">
 
 
 </div>
@@ -1195,21 +625,28 @@ alt="Community Health">
 
 
 
+
 <!-- DOWNLOAD SECTION -->
+
 
 <section id="download">
 
-<h2>डाउनलोड</h2>
+
+<h2>
+डाउनलोड
+</h2>
 
 
 <div class="card">
 
+
 <p>
-📄 स्वास्थ्य सेवा सम्बन्धी फारमहरू
+📄 स्वास्थ्य सम्बन्धी फारम तथा सूचना
 </p>
 
+
 <a href="#">
-डाउनलोड गर्नुहोस्
+Download
 </a>
 
 
@@ -1222,29 +659,49 @@ alt="Community Health">
 
 
 
+
 <!-- CONTACT SECTION -->
+
 
 <section id="contact">
 
 
-<h2>सम्पर्क गर्नुहोस्</h2>
+<h2>
+सम्पर्क
+</h2>
 
 
 <p>
-🏥 Kyang Health Post<br>
+
+🏥 <b>Kyang Health Post</b><br>
+
 क्यांग, मोदी गाउँपालिका<br>
-पर्वत जिल्ला, गण्डकी प्रदेश, नेपाल
+
+पर्वत जिल्ला, गण्डकी प्रदेश<br>
+
+नेपाल
+
 </p>
+
 
 
 <p>
-☎️ फोन: 98XXXXXXXX
+
+☎️ फोन:
+98XXXXXXXX
+
 </p>
+
 
 
 <p>
-📧 Email: kyanghealthpost@gmail.com
+
+📧 Email:
+kyanghealthpost@gmail.com
+
 </p>
+
+
 
 
 <iframe
@@ -1252,8 +709,10 @@ alt="Community Health">
 src="https://maps.google.com/maps?q=Kyang%20Modi%20Parbat&t=&z=13&ie=UTF8&iwloc=&output=embed"
 
 width="100%"
+
 height="300"
-style="border:0;">
+
+style="border:0;border-radius:10px;">
 
 </iframe>
 
@@ -1264,10 +723,12 @@ style="border:0;">
 
 
 
+
 <!-- FOOTER -->
 
 
 <footer>
+
 
 <p>
 © 2026 Kyang Health Post (क्यांग स्वास्थ्य चौकी)
@@ -1275,8 +736,73 @@ style="border:0;">
 
 
 <p>
-Designed for Public Health Service
+मोदी गाउँपालिका - पर्वत | गण्डकी प्रदेश
 </p>
 
 
 </footer>
+<script>
+
+
+fetch(
+"https://script.google.com/macros/s/AKfycbzxZhNKx8kZ3fICTdCgB7cZGUIoILSeQOkBNVJ34uBVLKJp6_jKcJ-ezan_kV0JxMSU/exec"
+)
+
+
+.then(response=>response.json())
+
+
+.then(data=>{
+
+
+let list =
+document.getElementById(
+"notice-list"
+);
+
+
+list.innerHTML="";
+
+
+data.slice(1).forEach(row=>{
+
+
+if(row[2]=="Active"){
+
+
+let li =
+document.createElement("li");
+
+
+li.innerHTML =
+"📢 "
++
+row[1]
++
+" ("
++
+row[0]
++
+")";
+
+
+list.appendChild(li);
+
+
+}
+
+
+});
+
+
+});
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
