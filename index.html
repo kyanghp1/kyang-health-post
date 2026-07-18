@@ -807,72 +807,35 @@ NCD सेवा
 <!-- NOTICE SECTION -->
 
 
-<section id="notice" class="notice-area">
+<div id="notice-list"></div>
 
+<script>
+const NOTICES_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRAIFUSZlO5s0yVHqj1nq2GOjZ8pQEuoiveNm3O-T9qDZdcSKV1295aobAotfNhOq9Uu-nG3afo2m_X/pub?gid=0&single=true&output=csv";
 
-<div class="container">
+async function loadNotices() {
+    const csv = await fetch(NOTICES_CSV).then(r => r.text());
 
+    const rows = csv.trim().split("\n").slice(1);
 
-<div class="title">
+    let html = "";
 
-<h2>
-सूचना तथा जानकारी
-</h2>
+    rows.forEach(row => {
 
-<p>
-Latest Notices
-</p>
+        const cols = row.split(",");
 
-</div>
+        html += `
+        <div class="notice">
+            <h3>${cols[1]}</h3>
+            <small>${cols[0]}</small>
+            <p>${cols[2]}</p>
+        </div>`;
+    });
 
+    document.getElementById("notice-list").innerHTML = html;
+}
 
-
-<div class="notice">
-
-<h3>
-📢 खोप कार्यक्रम सम्बन्धी सूचना
-</h3>
-
-<p>
-नियमित खोप कार्यक्रम स्वास्थ्य चौकीमा सञ्चालन भइरहेको छ।
-</p>
-
-</div>
-
-
-
-<div class="notice">
-
-<h3>
-📢 स्वास्थ्य शिविर सूचना
-</h3>
-
-<p>
-समुदायमा स्वास्थ्य परीक्षण कार्यक्रम आयोजना गरिनेछ।
-</p>
-
-</div>
-
-
-
-<div class="notice">
-
-<h3>
-📢 सार्वजनिक सूचना
-</h3>
-
-<p>
-स्वास्थ्य सेवासम्बन्धी नयाँ जानकारी यहाँ प्रकाशित गरिनेछ।
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</section>
+loadNotices();
+</script>
 
 
 
@@ -882,181 +845,12 @@ Latest Notices
 <!-- STAFF SECTION -->
 
 
-<section id="staff">
+const STAFF_CSV = "YOUR STAFF CSV";
 
-
-<div class="container">
-
-
-<div class="title">
-
-<h2>
-हाम्रो कर्मचारी टोली
-</h2>
-
-<p>
-Our Health Team
-</p>
-
-</div>
-
-
-
-<div class="quick">
-
-
-
-<div class="box">
-
-<div style="font-size:60px;">
-👨‍⚕️
-</div>
-
-<h3>
-डा. राम प्रसाद शर्मा
-</h3>
-
-<p>
-स्वास्थ्य चौकी प्रमुख
-</p>
-
-</div>
-
-
-
-<div class="box">
-
-<div style="font-size:60px;">
-👩‍⚕️
-</div>
-
-<h3>
-सिता थापा
-</h3>
-
-<p>
-स्टाफ नर्स
-</p>
-
-</div>
-
-
-
-<div class="box">
-
-<div style="font-size:60px;">
-👩‍⚕️
-</div>
-
-<h3>
-माया गुरुङ
-</h3>
-
-<p>
-ANM
-</p>
-
-</div>
-
-
-
-<div class="box">
-
-<div style="font-size:60px;">
-👨‍🔬
-</div>
-
-<h3>
-राजन अधिकारी
-</h3>
-
-<p>
-ल्याब सहायक
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
+loadStaff();
 <!-- GALLERY SECTION -->
 
-<section id="gallery" style="background:#eef7ff;">
-
-<div class="container">
-
-<div class="title">
-
-<h2>
-फोटो ग्यालरी
-</h2>
-
-<p>
-Health Activities Gallery
-</p>
-
-</div>
-
-
-<div class="quick">
-
-
-<div class="box">
-
-<img 
-src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d"
-style="width:100%;height:180px;object-fit:cover;border-radius:10px;"
->
-
-<h3>
-स्वास्थ्य सेवा
-</h3>
-
-</div>
-
-
-
-<div class="box">
-
-<img 
-src="https://images.unsplash.com/photo-1584515933487-779824d29309"
-style="width:100%;height:180px;object-fit:cover;border-radius:10px;"
->
-
-<h3>
-समुदाय स्वास्थ्य कार्यक्रम
-</h3>
-
-</div>
-
-
-
-<div class="box">
-
-<img 
-src="https://images.unsplash.com/photo-1579684385127-1ef15d508118"
-style="width:100%;height:180px;object-fit:cover;border-radius:10px;"
->
-
-<h3>
-स्वास्थ्य शिविर
-</h3>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-</section>
+<div id="gallery-container"></div>
 
 
 
