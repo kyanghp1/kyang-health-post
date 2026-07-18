@@ -1331,7 +1331,30 @@ All Rights Reserved.
 
 
 
+<script>
 
+const sheetURL =
+"https://script.google.com/macros/s/AKfycbzmd7iRA9t2h_WAEA5QiIE6-elx1MDC2ufxMnFfjwhg/dev";
+
+
+fetch(sheetURL)
+
+.then(response => response.json())
+
+.then(data => {
+
+console.log(data);
+
+})
+
+.catch(error => {
+
+console.log("Error:", error);
+
+});
+
+
+</script>
 </body>
 
 </html>
