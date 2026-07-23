@@ -1,342 +1,139 @@
 <!DOCTYPE html>
 <html lang="ne">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-क्यांग स्वास्थ्य चौकी | Kyang Health Post
-</title>
+<title>क्यांग स्वास्थ्य चौकी | Kyang Health Post</title>
 
-<meta name="description" content="Official Website of Kyang Health Post, Modi Rural Municipality, Parbat, Gandaki Province, Nepal">
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
 body{
-
-font-family:
-"Poppins",
-"Noto Sans Devanagari",
-sans-serif;
-
-background:#f5f8fb;
-color:#333;
-
+    font-family:'Noto Sans Devanagari',sans-serif;
+    background:#f8f9fa;
 }
 
-html{
-scroll-behavior:smooth;
+/* Top Government Bar */
+
+.gov-header{
+    background:#0066a1;
+    color:white;
+    padding:10px 0;
 }
 
+.gov-header img{
+    width:70px;
+}
 
-.container{
-
-width:90%;
-max-width:1200px;
-margin:auto;
-
+.gov-title{
+    font-size:22px;
+    font-weight:700;
 }
 
 
-/* TOP BAR */
+/* Main Header */
 
-.topbar{
+.main-header{
+    background:white;
+    padding:15px 0;
+    border-bottom:1px solid #ddd;
+}
 
-background:#005b96;
-color:white;
-padding:10px 0;
-font-size:14px;
-
+.hp-logo{
+    width:90px;
 }
 
 
-.topbar .container{
-
-display:flex;
-justify-content:space-between;
-flex-wrap:wrap;
-
+.hp-name{
+    color:#0066a1;
+    font-size:30px;
+    font-weight:700;
 }
 
 
-/* HEADER */
+/* Navigation */
 
-header{
+.navbar{
+    background:#00843d;
+}
 
-background:white;
-box-shadow:0 3px 12px rgba(0,0,0,.12);
+.navbar a{
+    color:white !important;
+    font-weight:600;
+}
 
+.navbar a:hover{
+    background:#006c32;
 }
 
 
-.header-main{
-
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:15px 0;
-
-}
-
-
-.brand{
-
-display:flex;
-align-items:center;
-gap:15px;
-
-}
-
-
-.logo{
-
-width:75px;
-height:75px;
-border-radius:50%;
-background:#eee;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:35px;
-
-}
-
-
-.brand h1{
-
-font-size:24px;
-color:#005b96;
-
-}
-
-
-.brand p{
-
-color:#198754;
-font-size:16px;
-
-}
-
-
-/* NAV */
-
-nav{
-
-background:#198754;
-
-}
-
-
-nav ul{
-
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-list-style:none;
-
-}
-
-
-nav ul li a{
-
-display:block;
-padding:14px 18px;
-color:white;
-text-decoration:none;
-
-}
-
-
-nav ul li a:hover{
-
-background:#146c43;
-
-}
-
-
-
-/* HERO */
+/* Hero */
 
 .hero{
+    height:500px;
+    background:
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3")
+    center/cover;
 
-height:480px;
-
-background:
-
-linear-gradient(
-rgba(0,91,150,.75),
-rgba(25,135,84,.75)
-),
-
-url("https://i.imgur.com/cNrjZ09.jpeg")
-
-center/cover;
-
-
-display:flex;
-align-items:center;
-color:white;
-
+    display:flex;
+    align-items:center;
+    color:white;
 }
 
 
-.hero-content{
-
-max-width:700px;
-
-}
-
-
-.hero h2{
-
-font-size:45px;
-margin-bottom:15px;
-
+.hero h1{
+    font-size:45px;
+    font-weight:700;
 }
 
 
 .hero p{
+    font-size:20px;
+}
 
-font-size:20px;
-margin-bottom:25px;
+
+/* Section */
+
+.section-title{
+
+    text-align:center;
+    color:#0066a1;
+    font-weight:700;
+    margin-bottom:30px;
 
 }
 
 
-.btn{
+.about-box{
 
-background:#198754;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px #ddd;
+
+}
+
+
+/* Footer */
+
+footer{
+
+background:#0066a1;
 color:white;
-padding:13px 28px;
-border-radius:30px;
-text-decoration:none;
-display:inline-block;
-
-}
-
-
-/* SECTION */
-
-section{
-
-padding:60px 0;
-
-}
-
-
-.title{
-
-text-align:center;
-margin-bottom:40px;
-
-}
-
-
-.title h2{
-
-color:#005b96;
-font-size:32px;
-
-}
-
-
-.quick{
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(220px,1fr));
-
-gap:25px;
-
-}
-
-
-.box{
-
-background:white;
-padding:25px;
-border-radius:12px;
-
-box-shadow:
-0 5px 15px rgba(0,0,0,.08);
-
-text-align:center;
-
-}
-
-
-.box span{
-
-font-size:40px;
-
-}
-
-
-.box h3{
-
-color:#005b96;
-margin:15px 0;
-
-}
-
-
-/* NOTICE */
-
-.notice-area{
-
-background:white;
-
-}
-
-
-.notice{
-
-border-left:5px solid #198754;
-
-background:#f8fff9;
-
 padding:20px;
-
-margin-bottom:15px;
-
-}
-
-
-
-@media(max-width:768px){
-
-.header-main{
-
-flex-direction:column;
+text-align:center;
 
 }
 
-.hero h2{
-
-font-size:32px;
-
-}
-
-nav ul{
-
-flex-direction:column;
-
-}
-
-}
 
 </style>
 
@@ -346,236 +143,544 @@ flex-direction:column;
 <body>
 
 
-<div class="topbar">
+<!-- Government Header -->
+
+<div class="gov-header">
 
 <div class="container">
 
-<div>
-🏥 मोदी गाउँपालिका - ०४ लेस्पार,पर्वत , गण्डकी प्रदेश 
-</div>
+<div class="row align-items-center">
 
-<div>
-📞 +977-9857670104 | ✉ kyanghp1@gmail.com
-</div>
 
-</div>
+<div class="col-md-2 text-center">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Emblem_of_Nepal.svg">
 
 </div>
 
 
+<div class="col-md-10">
 
-<header>
+<div class="gov-title">
 
-<div class="container header-main">
+नेपाल सरकार  
+<br>
+स्वास्थ्य तथा जनसंख्या मन्त्रालय
 
-
-<div class="brand">
-
-<div class="logo">
-🇳🇵
 </div>
 
-
-<div>
-
-<h1>
-Kyang Health Post
-</h1>
-
-<p>
-क्यांग स्वास्थ्य चौकी
+<p class="mb-0">
+गण्डकी प्रदेश सरकार | मोदी गाउँपालिका, पर्वत
 </p>
 
-</div>
 
 </div>
 
 
 </div>
 
+</div>
+
+</div>
 
 
-<nav>
 
-<ul>
 
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#staff">Staff</a></li>
-<li><a href="#notice">Notice</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#contact">Contact</a></li>
+<!-- Health Post Header -->
+
+
+<div class="main-header">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+
+<div class="col-md-2 text-center">
+
+<img class="hp-logo"
+src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Emblem_of_Nepal.svg">
+
+</div>
+
+
+<div class="col-md-10">
+
+<h1 class="hp-name">
+
+क्यांग स्वास्थ्य चौकी
+
+</h1>
+
+<h5>
+
+Kyang Health Post  
+<br>
+मोदी गाउँपालिका– पर्वत, गण्डकी प्रदेश
+
+</h5>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+<!-- Navigation -->
+
+
+<nav class="navbar navbar-expand-lg">
+
+<div class="container">
+
+
+<button class="navbar-toggler bg-light"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+
+
+<div class="collapse navbar-collapse" id="menu">
+
+
+<ul class="navbar-nav">
+
+
+<li class="nav-item">
+<a class="nav-link" href="#">
+गृहपृष्ठ
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="#">
+हाम्रो बारेमा
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="#">
+सेवाहरू
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="#">
+कर्मचारी
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="#">
+सूचना
+</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="#">
+सम्पर्क
+</a>
+</li>
+
+
 
 </ul>
+
+
+</div>
+
+
+</div>
 
 </nav>
 
 
-</header>
 
 
 
-<section class="hero" id="home">
+<!-- Hero Section -->
+
+
+<section class="hero">
+
 
 <div class="container">
 
-<div class="hero-content">
 
-<h2>
-स्वस्थ समुदायको लागि गुणस्तरीय स्वास्थ्य सेवा
-</h2>
+<h1>
+स्वस्थ नागरिक, समृद्ध समाज
+</h1>
 
 
 <p>
-**क्याङ स्वास्थ्य चौकीमा स्वागत छ,**
-**मोदी गाउँपालिका, पर्वत,**
-**गण्डकी प्रदेश, नेपाल।**
+क्यांग स्वास्थ्य चौकीमा गुणस्तरीय,
+सुलभ र भरपर्दो स्वास्थ्य सेवा
 </p>
 
 
-<a href="#services" class="btn">
+<a href="#" class="btn btn-success btn-lg">
+
 हाम्रा सेवाहरू हेर्नुहोस्
+
 </a>
 
 
 </div>
 
-</div>
 
 </section>
 
 
 
-<section id="about">
+
+
+
+<!-- About Section -->
+
+
+<section class="py-5">
+
 
 <div class="container">
 
-<div class="title">
 
-<h2>
-हाम्रो बारेमा
+<h2 class="section-title">
+
+स्वास्थ्य चौकी परिचय
+
 </h2>
 
-<p>
-About Kyang Health Post
-</p>
 
-</div>
+<div class="about-box">
 
-
-<div style="background:white;padding:35px;border-radius:15px;">
 
 <p>
-<strong>
-क्यांग स्वास्थ्य चौकी (Kyang Health Post)
-</strong>
-मोदी गाउँपालिका, पर्वत जिल्ला, गण्डकी प्रदेशमा रहेको एक सामुदायिक स्वास्थ्य संस्था हो।
-</p>
 
-<br>
-
-<p>
-यस स्वास्थ्य चौकीले आधारभूत स्वास्थ्य सेवा,
+क्यांग स्वास्थ्य चौकी मोदी गाउँपालिका,
+पर्वत जिल्लामा अवस्थित एक स्थानीय स्वास्थ्य संस्था हो।
+यसले समुदायलाई आधारभूत स्वास्थ्य सेवा,
 मातृ तथा शिशु स्वास्थ्य सेवा,
-खोप सेवा तथा रोग रोकथाम सेवा प्रदान गर्दछ।
+खोप सेवा,
+परिवार नियोजन सेवा लगायतका स्वास्थ्य सेवा प्रदान गर्दै आएको छ।
+
 </p>
 
-</div>
-
-</div>
-
-</section>
-<!-- SERVICES SECTION -->
-
-<section id="services" style="background:#eef7ff;">
-
-<div class="container">
-
-<div class="title">
-
-<h2>
-हाम्रा सेवाहरू
-</h2>
 
 <p>
-Our Healthcare Services
+
+हाम्रो उद्देश्य समुदायका सबै नागरिकलाई
+सुलभ, गुणस्तरीय र प्रभावकारी स्वास्थ्य सेवा प्रदान गर्नु हो।
+
 </p>
 
-</div>
-
-
-<div class="quick" id="services-list">
-
-<!-- Google Sheet बाट Services आउनेछ -->
 
 </div>
 
+
 </div>
+
 
 </section>
 
 
 
-<!-- NOTICE SECTION -->
 
-<section id="notice" class="notice-area">
 
-<div class="container">
+<!-- Footer -->
 
-<div class="title">
 
-<h2>
-सूचना तथा जानकारी
-</h2>
+<footer>
+
 
 <p>
-Latest Notices
+© २०८३ क्यांग स्वास्थ्य चौकी  
+<br>
+मोदी गाउँपालिका, पर्वत, गण्डकी प्रदेश
 </p>
 
-</div>
+<!-- ================= SERVICES SECTION ================= -->
 
 
-<div id="notice-list">
-
-<!-- Google Sheet बाट Notice आउनेछ -->
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-
-<!-- STAFF SECTION -->
-
-
-<section id="staff">
-
+<section class="py-5 bg-light">
 
 <div class="container">
 
 
-<div class="title">
-
-<h2>
-कर्मचारी विवरण 
+<h2 class="section-title">
+हाम्रा स्वास्थ्य सेवाहरू
 </h2>
 
+
+<div class="row g-4">
+
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+
+<div class="card-body text-center">
+
+
+<h4 class="text-success">
+🩺 सामान्य स्वास्थ्य सेवा
+</h4>
+
+
 <p>
-Our Health Team
+सामान्य रोगको जाँच,
+उपचार तथा स्वास्थ्य परामर्श सेवा।
 </p>
+
+
+</div>
+
+</div>
 
 </div>
 
 
 
-<div class="quick" id="staff-list">
 
-<!-- Google Sheet बाट Staff आउनेछ -->
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+
+<div class="card-body text-center">
+
+
+<h4 class="text-success">
+👶 मातृ तथा शिशु स्वास्थ्य
+</h4>
+
+
+<p>
+गर्भवती जाँच,
+प्रसूति सेवा,
+नवजात शिशु हेरचाह।
+</p>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+
+<div class="card-body text-center">
+
+
+<h4 class="text-success">
+💉 खोप सेवा
+</h4>
+
+
+<p>
+राष्ट्रिय खोप कार्यक्रम
+अन्तर्गत नियमित खोप सेवा।
+</p>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+
+<div class="card-body text-center">
+
+
+<h4 class="text-success">
+🧪 प्रयोगशाला सेवा
+</h4>
+
+
+<p>
+आधारभूत ल्याब परीक्षण
+तथा रिपोर्ट सेवा।
+</p>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+
+<div class="card-body text-center">
+
+
+<h4 class="text-success">
+👨‍👩‍👧 परिवार नियोजन
+</h4>
+
+
+<p>
+परिवार नियोजन सम्बन्धी
+परामर्श तथा सेवा।
+</p>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+
+<div class="card-body text-center">
+
+
+<h4 class="text-success">
+🚑 आकस्मिक सेवा
+</h4>
+
+
+<p>
+आवश्यक प्राथमिक उपचार
+र रेफरल सेवा।
+</p>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+<!-- ================= HEALTH PROGRAM SECTION ================= -->
+
+
+<section class="py-5">
+
+
+<div class="container">
+
+
+<h2 class="section-title">
+
+स्वास्थ्य कार्यक्रमहरू
+
+</h2>
+
+
+
+<div class="row">
+
+
+<div class="col-md-6">
+
+
+<ul class="list-group shadow">
+
+
+<li class="list-group-item">
+✔ राष्ट्रिय खोप कार्यक्रम
+</li>
+
+
+<li class="list-group-item">
+✔ सुरक्षित मातृत्व कार्यक्रम
+</li>
+
+
+<li class="list-group-item">
+✔ पोषण कार्यक्रम
+</li>
+
+
+<li class="list-group-item">
+✔ परिवार नियोजन कार्यक्रम
+</li>
+
+
+<li class="list-group-item">
+✔ क्षयरोग नियन्त्रण कार्यक्रम
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+<div class="col-md-6">
+
+
+<img 
+src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d"
+class="img-fluid rounded shadow">
+
+
+</div>
+
 
 </div>
 
@@ -585,61 +690,388 @@ Our Health Team
 
 </section>
 
-<!-- COMMITTEE SECTION -->
 
-<section id="committee" style="background:#eef7ff;">
+
+
+
+
+<!-- ================= STAFF SECTION ================= -->
+
+
+<section class="py-5 bg-light">
+
 
 <div class="container">
 
-<div class="title">
 
-<h2>
+<h2 class="section-title">
+
+हाम्रो कर्मचारी टोली
+
+</h2>
+
+
+
+<div class="row g-4">
+
+
+
+<div class="col-md-4">
+
+
+<div class="card shadow text-center">
+
+
+<img src="https://via.placeholder.com/300"
+class="card-img-top">
+
+
+<div class="card-body">
+
+
+<h5>
+स्वास्थ्य चौकी प्रमुख
+</h5>
+
+
+<p>
+नाम: यहाँ नाम राख्नुहोस्
+<br>
+पद: स्वास्थ्यकर्मी
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="col-md-4">
+
+
+<div class="card shadow text-center">
+
+
+<img src="https://via.placeholder.com/300"
+class="card-img-top">
+
+
+<div class="card-body">
+
+
+<h5>
+स्टाफ नर्स
+</h5>
+
+
+<p>
+नाम: यहाँ नाम राख्नुहोस्
+<br>
+पद: नर्स
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="col-md-4">
+
+
+<div class="card shadow text-center">
+
+
+<img src="https://via.placeholder.com/300"
+class="card-img-top">
+
+
+<div class="card-body">
+
+
+<h5>
+अन्य कर्मचारी
+</h5>
+
+
+<p>
+नाम: यहाँ नाम राख्नुहोस्
+<br>
+पद: कर्मचारी
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= MANAGEMENT COMMITTEE ================= -->
+
+
+<section class="py-5">
+
+
+<div class="container">
+
+
+<h2 class="section-title">
+
 स्वास्थ्य चौकी व्यवस्थापन समिति
+
 </h2>
 
+
+
+
+<div class="row g-4">
+
+
+<div class="col-md-4">
+
+
+<div class="card shadow text-center">
+
+
+<img 
+src="https://via.placeholder.com/400"
+class="card-img-top">
+
+
+<div class="card-body">
+
+
+<h5>
+अध्यक्ष
+</h5>
+
+
 <p>
-Health Post Management Committee
+नाम:
+यहाँ नाम राख्नुहोस्
 </p>
 
-</div>
-
-<div class="quick" id="committee-list">
-
-<!-- Google Sheet बाट Committee आउनेछ -->
 
 </div>
 
+
 </div>
+
+
+</div>
+
+
+
+
+
+<div class="col-md-4">
+
+
+<div class="card shadow text-center">
+
+
+<img 
+src="https://via.placeholder.com/400"
+class="card-img-top">
+
+
+<div class="card-body">
+
+
+<h5>
+सदस्य
+</h5>
+
+
+<p>
+नाम:
+यहाँ नाम राख्नुहोस्
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="col-md-4">
+
+
+<div class="card shadow text-center">
+
+
+<img 
+src="https://via.placeholder.com/400"
+class="card-img-top">
+
+
+<div class="card-body">
+
+
+<h5>
+सदस्य सचिव
+</h5>
+
+
+<p>
+नाम:
+यहाँ नाम राख्नुहोस्
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!-- ================= NOTICE BOARD ================= -->
+
+
+<section class="py-5 bg-light">
+
+<div class="container">
+
+
+<h2 class="section-title">
+सूचना पाटी
+</h2>
+
+
+<div class="card shadow">
+
+
+<div class="card-body">
+
+
+<ul class="list-group" id="notice-data">
+
+</ul>
+
+</div>
+
+
+</div>
+
+
+</div>
+
 
 </section>
 
 
 
-<!-- GALLERY SECTION -->
 
 
-<section id="gallery" style="background:#eef7ff;">
+
+
+<!-- ================= PHOTO GALLERY ================= -->
+
+
+<section class="py-5">
 
 
 <div class="container">
 
 
-<div class="title">
-
-<h2>
+<h2 class="section-title">
 फोटो ग्यालरी
 </h2>
 
-<p>
-Health Activities Gallery
-</p>
+
+
+<div class="row g-4">
+
+
+<div class="col-md-4">
+
+
+<img 
+src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3"
+class="img-fluid rounded shadow">
+
 
 </div>
 
 
-<div class="quick" id="gallery-list">
 
-<!-- Google Sheet बाट Gallery आउनेछ -->
+<div class="col-md-4">
+
+
+<img 
+src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d"
+class="img-fluid rounded shadow">
+
+
+</div>
+
+
+
+
+<div class="col-md-4">
+
+
+<img 
+src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528"
+class="img-fluid rounded shadow">
+
+
+</div>
+
+
 
 </div>
 
@@ -653,60 +1085,345 @@ Health Activities Gallery
 
 
 
-<!-- CONTACT -->
 
 
-<section id="contact">
+
+<!-- ================= DOWNLOAD SECTION ================= -->
+
+
+<section class="py-5 bg-light">
 
 
 <div class="container">
 
 
-<div class="title">
+<h2 class="section-title">
+डाउनलोड
+</h2>
 
-<h2>
+
+
+<div class="row">
+
+
+<div class="col-md-6">
+
+
+<div class="card shadow">
+
+
+<div class="card-body">
+
+
+<h5>
+📄 नागरिक बडापत्र
+</h5>
+
+
+<a href="#" class="btn btn-success">
+Download PDF
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="col-md-6">
+
+
+<div class="card shadow">
+
+
+<div class="card-body">
+
+
+<h5>
+📄 स्वास्थ्य सेवा विवरण
+</h5>
+
+
+<a href="#" class="btn btn-success">
+Download PDF
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= CITIZEN CHARTER ================= -->
+
+
+<section class="py-5">
+
+
+<div class="container">
+
+
+<h2 class="section-title">
+
+नागरिक बडापत्र
+
+</h2>
+
+
+
+<div class="table-responsive">
+
+
+<table class="table table-bordered shadow">
+
+
+<thead class="table-success">
+
+
+<tr>
+
+<th>
+सेवा
+</th>
+
+
+<th>
+समय
+</th>
+
+
+<th>
+सम्बन्धित व्यक्ति
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+<tbody>
+
+
+<tr>
+
+<td>
+सामान्य स्वास्थ्य जाँच
+</td>
+
+<td>
+कार्यालय समयमा
+</td>
+
+<td>
+स्वास्थ्यकर्मी
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<td>
+खोप सेवा
+</td>
+
+
+<td>
+तोकिएको दिन
+</td>
+
+
+<td>
+खोप केन्द्र कर्मचारी
+</td>
+
+
+</tr>
+
+
+
+
+<tr>
+
+
+<td>
+मातृ स्वास्थ्य सेवा
+</td>
+
+
+<td>
+नियमित
+</td>
+
+
+<td>
+स्वास्थ्यकर्मी
+</td>
+
+
+</tr>
+
+
+</tbody>
+
+
+
+</table>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= CONTACT SECTION ================= -->
+
+
+<section class="py-5 bg-light">
+
+
+<div class="container">
+
+
+<h2 class="section-title">
 सम्पर्क गर्नुहोस्
 </h2>
 
 
+
+<div class="row">
+
+
+
+<div class="col-md-6">
+
+
+<div class="card shadow">
+
+
+<div class="card-body">
+
+
+<h5>
+🏥 क्यांग स्वास्थ्य चौकी
+</h5>
+
+
 <p>
-Contact Kyang Health Post
+
+ठेगाना:
+<br>
+मोदी गाउँपालिका, पर्वत,
+गण्डकी प्रदेश, नेपाल
+
+</p>
+
+
+
+<p>
+
+☎ फोन:
+<br>
+यहाँ नम्बर राख्नुहोस्
+
+</p>
+
+
+
+<p>
+
+✉ Email:
+<br>
+यहाँ Email राख्नुहोस्
+
 </p>
 
 
 </div>
 
 
-
-<div style="background:white;padding:30px;border-radius:15px;">
-
-
-<h3>
-🏥 Kyang Health Post
-</h3>
-
-<br>
+</div>
 
 
-<p>
-📍 <span id="address">
-लोड हुँदैछ...
-</span>
-</p>
+</div>
 
 
-<p>
-📞 <span id="phone">
-लोड हुँदैछ...
-</span>
-</p>
 
 
-<p>
-✉ <span id="email">
-लोड हुँदैछ...
-</span>
-</p>
+
+
+
+<div class="col-md-6">
+
+
+<iframe
+
+src="https://maps.google.com/maps?q=Parbat%20Nepal&t=&z=13&ie=UTF8&iwloc=&output=embed"
+
+width="100%"
+
+height="300"
+
+style="border:0;"
+
+allowfullscreen=""
+
+loading="lazy">
+
+</iframe>
+
+
+</div>
+
+
+
 
 
 </div>
@@ -716,33 +1433,18 @@ Contact Kyang Health Post
 
 
 </section>
-
-
-
-
-
-
-<!-- FOOTER -->
-
-
-<footer style="background:#005b96;color:white;padding:30px;text-align:center;">
-
-
-<h3>
-Kyang Health Post
-</h3>
-
-<p>
-क्यांग स्वास्थ्य चौकी
-</p>
-
-
-<p>
-© 2026 All Rights Reserved
-</p>
-
-
 </footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+
+const CMS_URL =
+"https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec";
 
 
 
@@ -750,355 +1452,47 @@ Kyang Health Post
 
 <script>
 
-
-const API_URL =
-"https://script.google.com/macros/s/AKfycbySqDJWcuce3VJNPH-I_xRCS04Q4mdoAAcSqTiImkmAiCl2oIduDvKwZcElt1yst6ptjQ/exec";
-
+const CMS_URL =
+"https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec";
 
 
-
-
-// SERVICES LOAD
-
-
-fetch(API_URL+"?sheet=Services")
+fetch(CMS_URL)
 
 .then(res=>res.json())
 
 .then(data=>{
 
 
-let html="";
+let notice="";
 
 
-data.forEach(item=>{
+data.Notice.forEach(item=>{
 
 
-html += `
+notice += `
 
+<li class="list-group-item">
 
-<div class="box">
-
-
-<span>
-
-${item.icon}
-
-</span>
-
-
-<h3>
-
-${item.title}
-
-</h3>
-
-
-<p>
-
-${item.description}
-
-</p>
-
-
-</div>
-
-
-`;
-
-
-
-});
-
-
-document.getElementById("services-list").innerHTML=html;
-
-
-});
-
-
-
-
-
-
-
-// NOTICE LOAD
-
-
-fetch(API_URL+"?sheet=Notices")
-
-.then(res=>res.json())
-
-.then(data=>{
-
-
-let html="";
-
-
-data.forEach(item=>{
-
-
-html += `
-
-
-<div class="notice">
-
-
-<h3>
 📢 ${item.title}
-</h3>
 
+<br>
 
-<p>
-${item.description}
-</p>
+<small>${item.date}</small>
 
-
-
-<a href="${item.Link}" target="_blank">
-
-View More
-
-</a>
-
-
-</div>
-
-
+</li>
 
 `;
 
-
-
 });
 
 
-document.getElementById("notice-list").innerHTML=html;
+document.getElementById("notice-data").innerHTML=notice;
 
 
 });
-
-
-
-
-
-
-
-// STAFF LOAD
-
-
-fetch(API_URL+"?sheet=Staff")
-
-.then(res=>res.json())
-
-.then(data=>{
-
-
-let html="";
-
-
-data.forEach(item=>{
-
-
-html += `
-
-
-<div class="box">
-
-
-<img src="${item.icon}"
-
-style="width:80px;height:80px;border-radius:50%;object-fit:cover;">
-
-
-
-<h3>
-
-${item.name}
-
-</h3>
-
-
-
-<p>
-
-${item.position}
-
-</p>
-
-
-</div>
-
-
-
-`;
-
-
-
-});
-
-
-document.getElementById("staff-list").innerHTML=html;
-
-
-
-});
-
-
-
-
-
-
-// ===============================
-// COMMITTEE LOAD
-// ===============================
-
-fetch(API_URL + "?sheet=Committee")
-
-.then(res => res.json())
-
-.then(data => {
-
-let html = "";
-
-data.forEach(item => {
-
-html += `
-
-<div class="box">
-
-<img src="${item.image}"
-
-style="
-width:140px;
-height:140px;
-border-radius:50%;
-object-fit:cover;
-border:4px solid #198754;
-margin-bottom:15px;
-">
-
-<h3>${item.name}</h3>
-
-<p style="color:#198754;font-weight:bold;">
-${item.position}
-</p>
-
-<p>
-📞 ${item.phone}
-</p>
-
-</div>
-
-`;
-
-});
-
-document.getElementById("committee-list").innerHTML = html;
-
-})
-
-.catch(error => {
-
-console.log("Committee Error:", error);
-
-});
-// GALLERY LOAD
-
-
-fetch(API_URL+"?sheet=Gallery")
-
-.then(res=>res.json())
-
-.then(data=>{
-
-
-let html="";
-
-
-data.forEach(item=>{
-
-
-html += `
-
-
-<div class="box">
-
-
-<img src="${item.image}"
-
-style="width:100%;height:180px;object-fit:cover;border-radius:10px;">
-
-
-
-<h3>
-
-${item.title}
-
-</h3>
-
-
-</div>
-
-
-
-`;
-
-
-
-});
-
-
-document.getElementById("gallery-list").innerHTML=html;
-
-
-
-});
-
-
-
-
-
-
-
-// CONTACT LOAD
-
-
-fetch(API_URL+"?sheet=Contact")
-
-.then(res=>res.json())
-
-.then(data=>{
-
-
-let contact=data[0];
-
-
-document.getElementById("phone").innerHTML =
-contact.phone;
-
-
-document.getElementById("email").innerHTML =
-contact.email;
-
-
-document.getElementById("address").innerHTML =
-contact.address;
-
-
-
-})
-
-.catch(error=>{
-
-console.log(error);
-
-});
-
 
 
 </script>
-
 
 
 </body>
